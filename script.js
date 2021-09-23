@@ -107,7 +107,43 @@ function
 
 getmilk(5); // 2 bottles of milk and 1 rupee change 
 
+// 13.comparators and equality
 
+is equal to ===
+is not equal to !==
+is greater than >
+is smaller than <
+is greater or equal to >=
+is smaller or equal to <=
+ 
+ AND &&
+ OR ||
+ NOT !
+ 
+//  14. Array
+ 
+var fruits = ['apple', 'banana','mango'];
+
+console.log(fruits.length); // 3
+console.log(fruits[0]);
+
+// inser item  at end
+fruits.push('lime') // fruits = ['apple', 'banana','mango', 'lime'];
+// pop from last
+fruits.pop('lime') // fruits = ['apple', 'banana','mango'];
+
+
+
+
+// 15. conditional statements
+
+var fruit_name = prompt('enter a fruit name');
+
+if (fruits.include(fruit_name)) {
+   alert('yes');
+} else {
+   alert('no');
+}
 
 
 
