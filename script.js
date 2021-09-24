@@ -1,10 +1,10 @@
-// 1. Js alert() function (pop Up)- just like Print
+// 1. alert() function (pop Up)- just like Print
 alert('hello world');
 
-// 2.js prompt() function like input()
+// 2. prompt() function like input()
 prompt('what is your name');
 
-// 3.varibale declaration with var
+// 3. varibale declaration with var
  var yourname = prompt('what is your name');
 
 //  4 lenght() function to cal no of char in string
@@ -144,23 +144,160 @@ if (fruits.include(fruit_name)) {
 } else {
    alert('no');
 }
+// 16. Leap year
 
+function isleap (year) {
+  if (year%4 ===0) {
 
+    if (year%100 ===0){
 
+      if (year%400 === 0){
 
+          return 'leap year';
 
+      } else {
+         return 'nota leap year';
+      }
 
+    } else{
+      return ' a leap year';
+    }
 
+  } else {
+    return 'not a leap year';
+  }
 
+}
 
+// 17. fizzbuzz
 
+var output = [];
+var count = 1;
 
+function fizzbuzz() {
+  
+     if (count%3===0 && count%5===0){
+       output.push('fizzbuzz');
+     }
+     else if (count++ % 3 ===0){
+       output.push('fizz');
+     } 
+     else if (count%5===0) {
+      output.push('buzz');
+     }
+     else{
+       output.push(count);
+     }
+  count++;
+  console.log(output);
+}
 
+// 18. who's buying lunch
 
+var name = ['a','b','c','d','e'];
 
+function whospaying(name){
 
+  var numberofpeople = name.length();
+  var randompersonposition = Math.floor(Math.random()*numberofpeople;
+  var randomperson  = names[randompersonposition];
+  
+  return randomperson;
 
+}
 
+// 19. while (control statement)
+
+while (something is true) {
+ //do this
+}
+ 
+// FizzBuzz from 1-100
+
+var output = [];
+var count = 1;
+
+function fizzbuzz() { 
+   while (count <= 100) {
+   if (count%3===0 && count%5===0){
+        output.push('fizzbuzz');
+      }else if (count++ % 3 ===0){
+        output.push('fizz');
+      }else if (count%5===0) {
+        output.push('buzz');
+      }else{
+        output.push(count);
+      }
+   count++;
+   }
+   console.log(output);
+}
+
+ 
+// 20. For Loops
+
+      start    end   change
+for( var i=0 ; i<2 ;  i++   ) {
+   
+   console.log(i);
+}
+
+// FizzBuzz from 1-100 using for loop
+
+var output = [];
+
+function fizzbuzz() { 
+ 
+   for ( var count = 1; count <= 100; count++; ) {
+    
+   if (count%3===0 && count%5===0){
+        output.push('fizzbuzz');
+      }else if (count++ % 3 ===0){
+        output.push('fizz');
+      }else if (count%5===0) {
+        output.push('buzz');
+      }else{
+        output.push(count);
+      }
+   }
+   console.log(output);
+}
+
+// 21.Fibonacchi sequence
+   every no, is sum of previous 2 no.
+   
+   
+//   22. DOM
+   
+//   1. Inline js
+       using onload
+    <body onload="alert('hello')">
+
+// 2. Internal js
+      using script
+<script type="text/javascript">
+
+  alert('hello');
+  
+</script>
+    
+// 3. external js
+     by making index.js file and linking to index.html using scriptsrc like styles.css
+
+     using scriptsrc
+
+<script src="index.js" charset="utf-8"></script>
+
+// 4. properties
+      .innerHTML
+      .style
+      .firstchild
+      .lastchild
+
+// 5. Methods
+       .click()
+       .appendChild()
+       .setAttribute()
 
 
 
