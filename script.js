@@ -299,16 +299,50 @@ function fizzbuzz() {
        .appendChild()
        .setAttribute()
 
+https://www.w3schools.com/jsref/dom_obj_style.asp
+
+// 23. Construstor ( first letter of this function should be capital ex BellBoy)
+
+function BellBoy ( name, age, workPermit, languages ) {
+
+  this.name = name;
+  this.age = age;
+  this.workPermit = workPermit;
+  this.laguages = languages;
+
+}
+
+// 24. Initialise object
+
+var bellBoy1 = new BellBoy ('intakhab', 20, true, ['eng' , 'hindi']);
+var bellBoy2 = new BellBoy ('vishal', 20, true, ['eng' , 'hindi']);
 
 
+// example
 
+function BellBoy ( name, age, workPermit, languages ) {
 
+  this.name = name;
+  this.age = age;
+  this.workPermit = workPermit;
+  this.laguages = languages;
+  this.moveSuitcase = function () {
+    alert ('may i have your suitcase');
+    pickUpSuitcase();
+    move();
+  }
+}
 
-
-
-
-
-
+// example
+function Audio (fileLocation) {
+  this.fileLocation = fileLocation;
+  this.play = function () {
+      //check file at file location
+      //play file
+  }
+}
+ var tom = new Audio ('sounds/abc.mp3');
+ tom.play();
 
 
 
