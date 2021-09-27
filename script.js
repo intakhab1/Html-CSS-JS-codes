@@ -345,7 +345,43 @@ function Audio (fileLocation) {
  tom.play();
 
 
+//25. for loop alternative
 
+<% posts.forEach(function(post) { %>    // from blog website
+<h1><%= post.title %></h1>
+<p><%= post.content %></p>
+<% }); %>
 
+or
+ for (var i = 0; i< posts.length; i++) { 
+ console.log(posts[i].title );
+ };                                
+ 
+ //26. Express Routing and Parameter
+                                 
+ app.get('/posts/:postName' , function(req,res){             // rexpress routing and parameter
+ const requestedTitle = _.lowerCase(req.params.postName);       //using _.lowerCase from LODASH module
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
